@@ -27,7 +27,8 @@ module.exports = {
     },
     "plugins": [
         "react",
-        "@typescript-eslint" // Добавление плагина eslint-plugin-prettier
+        "@typescript-eslint", // Добавление плагина eslint-plugin-prettier
+        "jest" // Добавление плагина eslint-plugin-jest
     ],
     "rules": {
     },
