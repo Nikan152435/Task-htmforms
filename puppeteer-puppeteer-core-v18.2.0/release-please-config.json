@@ -1,0 +1,12 @@
+{
+  "packages": {
+    "packages/puppeteer": {},
+    "packages/puppeteer-core": {},
+    "packages/testserver": {}
+  },
+  "plugins": [
+    {
+      "type": "node-workspace"
+    }
+  ]
+}

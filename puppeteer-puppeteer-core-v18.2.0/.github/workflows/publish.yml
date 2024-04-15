@@ -1,0 +1,27 @@
+name: Publish
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - v*
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install dependencies
+        run: npm install
+      - name: Build packages
+        run: npm run build
+      - name: Publish packages
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN_RELEASE}}
+        run: |
+          npm config set registry 'https://wombat-dressing-room.appspot.com/'
+          npm config set '//wombat-dressing-room.appspot.com/:_authToken' $NODE_AUTH_TOKEN
+          npm publish --workspaces

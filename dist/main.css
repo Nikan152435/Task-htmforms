@@ -1,0 +1,58 @@
+.btn {
+    display: block;
+    text-align: center;
+    position: relative;
+    margin: 150px auto;
+    color: #fff;
+    font-weight: 400;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    border: 1px solid #ced4da;
+}
+.btn:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, .5);
+}
+
+.popover-container {
+    display: none;
+}
+
+/* .popover {
+    max-width: 276px;
+    top: 50px;
+    left: 30px;
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 0.3rem;
+    box-sizing: border-box;
+}
+.popover-header {
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    color: inherit;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ebebeb;
+    border-top-left-radius: calc(0.3rem - 1px);
+    border-top-right-radius: calc(0.3rem - 1px);
+}
+.popover-body {
+   padding: 0.5rem 0.75rem;
+   color: #212529;
+} */
+
+
+
+/*# sourceMappingURL=main.css.map*/

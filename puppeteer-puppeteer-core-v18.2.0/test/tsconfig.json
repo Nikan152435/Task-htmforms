@@ -1,0 +1,11 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "module": "CommonJS",
+    "moduleResolution": "NodeNext",
+    "outDir": "build",
+    "rootDir": "src"
+  },
+  "include": ["src"],
+  "references": [{"path": "../utils/mochaRunner/tsconfig.json"}]
+}
