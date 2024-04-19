@@ -1,5 +1,5 @@
-import createPopover from './form.js';
+import createPopover from './form';
 
 const button = document.querySelector('.btn');
-const { content } = button.dataset;
+
 createPopover(button.dataset.content);

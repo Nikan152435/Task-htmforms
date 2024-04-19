@@ -1,3 +1,5 @@
+import bootstrap from 'bootstrap';
+
 export default function createPopover(element, content) {
   const popover = new bootstrap.Popover(element, {
     placement: 'top',
