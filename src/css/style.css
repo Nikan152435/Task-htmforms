@@ -26,6 +26,16 @@
     display: none;
 }
 
+/* Стили для всплывающей подсказки */
+.tooltip-container {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 /* .popover {
     max-width: 276px;
     top: 50px;

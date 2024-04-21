@@ -1,4 +1,5 @@
 import puppeteer from "puppeteer";
+import createPopover from "./js/form";
 
 (async () => {
   const browser = await puppeteer.launch();
@@ -32,4 +33,17 @@ import puppeteer from "puppeteer";
   }
 
   await browser.close();
+  // Jest тесты
+  describe('createPopover', () => {
+    it('should return a popover instance', () => {
+      const element = document.createElement('button');
+      element.dataset.content = 'Test Content';
+
+      const popover = createPopover(element, element.dataset.content);
+
+      expect(popover).toBeDefined();
+      expect(popover.constructor.name).toBe('Popover');
+      expect(popover._config.content).toBe('Test Content');
+    });
+  });
 })();
